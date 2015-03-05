@@ -1,0 +1,14 @@
+PODS:
+  - IconFontCache (0.1.0)
+
+DEPENDENCIES:
+  - IconFontCache (from `../`)
+
+EXTERNAL SOURCES:
+  IconFontCache:
+    :path: ../
+
+SPEC CHECKSUMS:
+  IconFontCache: 69189f4185422748a6b556f83654f2b206fcdced
+
+COCOAPODS: 0.35.0

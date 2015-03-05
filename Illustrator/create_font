@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -xe
+
+if npm list svgo | grep svgo ; then
+	echo "SVGO already installed"
+else
+	npm install svgo
+fi
+pwd
+svg-font-create -i ./ -o font.svg -c config.yml
+svg2ttf font.svg icon-font.ttf
