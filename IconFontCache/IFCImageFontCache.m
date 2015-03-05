@@ -53,7 +53,7 @@ static IFCImageFontCache *sharedInstance = nil;
     };
     CGSize textSize = [icon sizeWithAttributes:attrs];
 
-    UIGraphicsBeginImageContext(textSize);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(textSize.width, textSize.height), NO, [UIScreen mainScreen].scale);
 
     [icon drawInRect:CGRectMake(0, 0, textSize.width, textSize.height) withAttributes:attrs];
 
